@@ -609,6 +609,12 @@
     transition: transform 0.3s ease;
 }
 
+.category-arrow::before {
+    content: '▼';
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
 .category-content {
     display: none;
 }
@@ -1046,6 +1052,58 @@
         padding: 20px;
     }
     
+    /* Transaction Categories Mobile */
+    .transaction-category {
+        margin-bottom: 15px;
+    }
+    
+    .category-header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .category-info {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .category-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+    
+    .category-details {
+        min-width: 0;
+        flex: 1;
+    }
+    
+    .category-title {
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .category-count {
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    
+    .category-total {
+        font-size: 1.1rem;
+        font-weight: 700;
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+    
+    .category-arrow {
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+    
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -1075,6 +1133,67 @@
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
+    }
+    
+    /* Transaction Categories Mobile Small */
+    .transaction-category {
+        margin-bottom: 12px;
+    }
+    
+    .category-header {
+        padding: 12px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .category-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .category-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+    }
+    
+    .category-details {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .category-title {
+        font-size: 0.95rem;
+        line-height: 1.2;
+    }
+    
+    .category-count {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+    
+    .category-total {
+        font-size: 1.1rem;
+        font-weight: 700;
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+        margin-top: 4px;
+    }
+    
+    .category-arrow {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        margin-left: 0;
+    }
+    
+    .info-card {
+        padding: 20px 15px;
     }
     
     .footer {
